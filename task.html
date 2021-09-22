@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+  </head>
+<body>
+  
+    <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+     <a id="preventdef" href="https://www.mozilla.org/">Mozilla homepage</a>
+    <p id="targ"></p>
+  
+
+<script>
+  document.getElementById("prevantdef").addEventListener("click",function(event){
+     event.preventDefault()
+   })
+ 
+/*const link = document.querySelector('a');
+link.textContent="mozilla"
+link.href="https://translate.google.com"
+/*const sect=document.querySelector("section")
+const newElement=document.createElement("p")
+newElement.textContent="hej"
+sect.appendChild(newElement)
+const texnode=document.querySelector("p")
+const text=document.createTextNode(" dinosaur")
+texnode.appendChild(text)*/
+/*const sect=document.querySelector("section")
+const text=document.createElement("p")
+text.textContent="hej bro"
+sect.appendChild(text)
+//const textnod=document.createTextNode(" link")
+const ptag=document.querySelectorAll("p")
+//ptag.appendChild(textnod)
+//sect.appendChild(ptag)
+ptag.forEach(a=>{
+  a.remove()
+})*/
+</script>
+</body>
+</html>

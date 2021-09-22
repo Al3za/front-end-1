@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>form power</h2>
+    <form>
+        Name <input id="Name" type="text"><br><br>
+        Aftername <input id="eftername" type="text"><br><br>
+        E-mail <input id="email" type="text">
+    </form>
+
+    <p id="p"></p>
+    <p id="p2"></p>
+
+    <button type="submit" onclick="tom()">submit</button>
+
+    <script>
+        const ids = ["Name", "eftername", "email"]
+        const pTag = document.getElementById("p")
+        const pTag2 = document.getElementById("p2")
+        let num = 0
+        let num2 = 0
+
+        function tom() {
+            num2 = 0
+            num = 0
+            pTag.innerHTML = ""
+            ids.forEach(a => {
+                let Empti = document.getElementById(a)
+                if (Empti.value == "" || Empti.value == " ") {
+                    num += 1
+                    if (num != 3) {
+                        pTag.innerHTML += a + " får inte vara tom " + "<br>"
+                    } else {
+                        pTag.innerHTML = "formularet får ej vara tom"
+                    }
+                } else {
+                    num2 += 1
+                    if (num2 == 3) {
+                        pTag2.innerHTML = "tack för ansökan"
+                    }
+                }
+            })
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
