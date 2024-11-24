@@ -1,3 +1,3 @@
 # front-end-1
 
-Under front-end-1 lessons, vi studied pretty much arrays, filters, forEach and mapps. If you like that, here will you found some funny exercises
+Under front-end-1 lessons, vi studied arrays, filters, forEach and maps methods. If you like that, here will you found some funny exercises
